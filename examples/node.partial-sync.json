@@ -1,0 +1,9 @@
+{
+  "partial-sync-primary-network": true,
+  "track-subnets": "REPLACE_WITH_YOUR_SUBNET_ID",
+  "http-host": "127.0.0.1",
+  "http-port": 9650,
+  "staking-port": 9651,
+  "log-level": "info",
+  "log-display-level": "info"
+}

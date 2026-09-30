@@ -1,0 +1,15 @@
+[Unit]
+Description=AvalancheGo L1 node (partial sync Primary Network)
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/local/bin/avalanchego --config-file=/root/.avalanchego/configs/node.json
+Restart=always
+RestartSec=5
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
